@@ -7,7 +7,7 @@ var respecConfig =
   specStatus: "wv",
   specType: "WA",
   license: "cc-by-nd",
-  publishDate: "2026-11-19",
+  publishDate: "2026-11-20",
   github: "https://github.com/geonovum/bgtwerkafspraakoverbouwenonderbouw/",
   authors: [
     {
@@ -18,7 +18,7 @@ var respecConfig =
   ],
   editors: [
     {
-      name: "Geonovum",
+      name: "Inge La Rivière",
       company: "Geonovum",
       companyURL: "https://www.geonovum.nl"
     }

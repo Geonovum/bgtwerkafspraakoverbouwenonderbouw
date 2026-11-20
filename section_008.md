@@ -1,7 +1,7 @@
 
 # Bijlage voorbeelden van afbakening<span class='noot'>[1]<span class='noottekst'> De BAG-id’s en de BGT-id’s zijn fictief<br/>
 </span></span> {#47F5EA8C}
-<span style='color: #auto;'>A] Situatie: pand met overbouw en onderbouw (kelder) die groter is dan het pand.</span>  
+<span>A] Situatie: pand met overbouw en onderbouw (kelder) die groter is dan het pand.</span>  
 <img src='media/image1.png' alt='Afbeelding met huis, raam, ontwerp' style='width: 100%;'></img>
 Afbakening op maaiveld:   
 <img src='media/image2.png' alt='Geen alternatieve tekst beschikbaar' style='width: 6.628444881889764%;'></img>
