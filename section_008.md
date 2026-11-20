@@ -18,11 +18,11 @@ B] situatie: pand  bestaande uit 2 bovengrondse ingangen (multivlak) en als ond
 
 <div class='textbox'><p id='1CA1BF85'>BGT pand G0123.55a0c0c0a555c </p><p class='space-after' id='043D10AC'>met BAG-identificatie 012329902</p></div>
 
-<div class='textbox'><p id='5EC8FF2F'><b>met uitsparingen</b></p></div>
+<div class='textbox'><p id='5EC8FF2Fx'><b>met uitsparingen</b></p></div>
 
-<div class='textbox'><p id='592D93AA'>BGT pand G0123.44a0c0c0a444c </p><p class='space-after' id='4486CD7B'>met BAG-identificatie 012329902</p></div>
+<div class='textbox'><p id='592D93AAx'>BGT pand G0123.44a0c0c0a444c </p><p class='space-after' id='4486CD7Bx'>met BAG-identificatie 012329902</p></div>
 
-<div class='textbox'><p id='1CA1BF85'>BGT pand G0123.55a0c0c0a555c </p><p class='space-after' id='043D10AC'>met BAG-identificatie 012329902</p></div>
+<div class='textbox'><p id='1CA1BF85x'>BGT pand G0123.55a0c0c0a555c </p><p class='space-after' id='043D10ACx'>met BAG-identificatie 012329902</p></div>
 
   
 <br/>
@@ -32,7 +32,7 @@ C] situatie van een flat met een grote afzonderlijke en geheel ondergrondse pand
 <img src='media/image8.png' alt='Afbeelding met schermopname, Rechthoek, diagram, lijn' style='width: 100%;'></img>
 41624251205230<div class='textbox'><p id='25D05BB1'>BGT pand G0123.33a0c0c0a333c </p><p class='space-after' id='455A4C99'>met BAG-identificatie 012329903</p></div>
 
-<div class='textbox'><p id='25D05BB1'>BGT pand G0123.33a0c0c0a333c </p><p class='space-after' id='455A4C99'>met BAG-identificatie 012329903</p></div>
+<div class='textbox'><p id='25D05BB1x'>BGT pand G0123.33a0c0c0a333c </p><p class='space-after' id='455A4C99x'>met BAG-identificatie 012329903</p></div>
 
 Op maaiveld:  
 <img src='media/image9.png' alt='Afbeelding met lijn, schermopname, Rechthoek, diagram' style='width: 100%;'></img>
@@ -51,11 +51,11 @@ Manier 3 is de enige manier die toegestaan is. <b>Als gegroepeerde vormen:</b>
 
 <div class='textbox'><p id='1D6D01D0'>Manier 1</p></div>
 
-<div class='textbox'><p id='78E68029'>Manier 3</p></div>
+<div class='textbox'><p id='78E68029x'>Manier 3</p></div>
 
-<div class='textbox'><p id='5000C217'>Manier 2</p></div>
+<div class='textbox'><p id='5000C217x'>Manier 2</p></div>
 
-<div class='textbox'><p id='1D6D01D0'>Manier 1</p></div>
+<div class='textbox'><p id='1D6D01D0x'>Manier 1</p></div>
 
   
 <br/>
