@@ -18,7 +18,7 @@ var respecConfig =
   ],
   editors: [
     {
-      name: "Inge La Rivière",
+      name: "Geonovum",
       company: "Geonovum",
       companyURL: "https://www.geonovum.nl"
     }
