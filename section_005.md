@@ -1,7 +1,7 @@
 
 # Afbakeningsregels van registratie van overbouw en onderbouw {#792BF0F2}
 Delen van panden die zich boven maaiveld bevinden (overbouw):   
-<ol type='1'><li>De geometrie van overbouw van een pand wordt in de BGT vastgelegd met het objecttype Pand.</li>
+<ol type='1'><li>De geometrie van overbouw van een pand wordt in de BGT vastgelegd met het objecttype Pand en een relatieve hoogte &gt; 0.</li>
 <li>Een overbouw kan alleen voorkomen als er ook een pand met dezelfde BAG-identificatie op maaiveld (relatieve hoogte is 0) aanwezig is, met uitzondering van de in paragraaf 10.7.1 van de catalogus BGT 2.1 genoemde uitzonderingen. Zie voorbeeld A in de Bijlage.</li>
 <li>Alleen de <u>uít</u>stekende delen - uítstekend ten opzichte van maaiveld - van de overbouw worden afgebakend (zoals uitkragende delen van panden);</li>
 <li>De geometrie van <u>uít</u>stekende delen (zoals verblijfsruimtes hangend boven maaiveld) krijgen een relatieve hoogte &gt; 0, zoveel mogelijk in overeenstemming met de werkelijke situatie.</li>
@@ -12,7 +12,7 @@ Delen van panden die zich boven maaiveld bevinden (overbouw):
 <br/>
 <br/>
 Delen van panden die zich onder maaiveld bevinden (onderbouw):  
-<ol type='1'><li>De geometrie van onderbouw van een pand wordt in de BGT vastgelegd met het objecttype Pand.</li>
+<ol type='1'><li>De geometrie van onderbouw van een pand wordt in de BGT vastgelegd met het objecttype Pand en een relatieve hoogte &lt; 0.</li>
 <li>Een onderbouw kan alleen voorkomen als er ook een pand met dezelfde BAG-identificatie op maaiveld (met relatieve hoogte = 0), aanwezig is.</li>
 <li>Geheel ondergrondse panden, - die niet horen bij een  pand op maaiveld, met status bestaand én met dezelfde BAG-identificatie -, zijn geen onderbouw. Ze worden met een relatieve hoogte &lt; 0 vastgelegd  en zijn daarmee een uitzondering op de regel dat panden altijd op maaiveld liggen, net als bv brugwachterhuisjes ook een uitzondering zijn. Zie voorbeeld C in de bijlage.</li>
 <li>Alleen de <u>uít</u>stekende delen - uítstekend ten opzichte van maaiveld - van de onderbouw worden afgebakend (zoals uitkragende delen van panden);</li>
