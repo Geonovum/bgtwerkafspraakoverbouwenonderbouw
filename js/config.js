@@ -6,8 +6,8 @@ var respecConfig =
   pubDomain: "bag",
   specStatus: "wv",
   specType: "WA",
-  license: "cc-by-nd",
-  publishDate: "2026-11-20",
+  license: "cc-by",
+  publishDate: "2026-11-25",
   github: "https://github.com/geonovum/bgtwerkafspraakoverbouwenonderbouw/",
   authors: [
     {
@@ -18,7 +18,7 @@ var respecConfig =
   ],
   editors: [
     {
-      name: "Geonovum",
+      name: "Silvy Horbach",
       company: "Geonovum",
       companyURL: "https://www.geonovum.nl"
     }

@@ -1,3 +1,3 @@
 
-# Kwaliteitsindicatoren {#52E7E10C}
-Bestaande indicatoren eventueel aanpassen om deze nog steeds zinvol te laten zijn. Opvoeren van nieuwe indicatoren is niet gewenst.  
+# Gebruik en uitwisseling {#7F88DDAE}
+De gegevens worden aangeboden aan de Landelijke Voorziening BGT.  

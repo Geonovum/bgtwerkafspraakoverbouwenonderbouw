@@ -1,3 +1,3 @@
 
-# Beheeraspecten {#47426A27}
-De werkafspraak wordt vastgesteld als tijdelijke aanvulling op de standaard en kan bij een volgende formele standaardwijziging (bijv. IMGeo 3.0) worden opgenomen.  
+# Kwaliteitsindicatoren {#52E7E10C}
+Bestaande indicatoren eventueel aanpassen om deze nog steeds zinvol te laten zijn. Opvoeren van nieuwe indicatoren is niet gewenst.  
