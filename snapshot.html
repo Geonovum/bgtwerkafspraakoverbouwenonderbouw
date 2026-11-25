@@ -89,6 +89,51 @@ img.license{float:left;padding-right:5px;background:0 0}
 </style>
 <meta name="color-scheme" content="light">
 <style>
+.hljs,body:has(input[name=color-scheme][value=light]:checked) .hljs,head:not(:has(meta[name=color-scheme][content~=dark]))+body .hljs{--base:#fafafa;--mono-1:#383a42;--mono-2:#686b77;--mono-3:#717277;--hue-1:#0b76c5;--hue-2:#336ae3;--hue-3:#a626a4;--hue-4:#42803c;--hue-5:#ca4706;--hue-5-2:#c91243;--hue-6:#986801;--hue-6-2:#9a6a01}
+@media (prefers-color-scheme:dark){
+.hljs{
+  --base: #282c34;
+  --mono-1: #abb2bf;
+  --mono-2: #818896;
+  --mono-3: #5c6370;
+  --hue-1: #56b6c2;
+  --hue-2: #61aeee;
+  --hue-3: #c678dd;
+  --hue-4: #98c379;
+  --hue-5: #e06c75;
+  --hue-5-2: #be5046;
+  --hue-6: #d19a66;
+  --hue-6-2: #e6c07b;
+}
+}
+body:has(input[name=color-scheme][value=dark]:checked) .hljs{
+  --base: #282c34;
+  --mono-1: #abb2bf;
+  --mono-2: #818896;
+  --mono-3: #5c6370;
+  --hue-1: #56b6c2;
+  --hue-2: #61aeee;
+  --hue-3: #c678dd;
+  --hue-4: #98c379;
+  --hue-5: #e06c75;
+  --hue-5-2: #be5046;
+  --hue-6: #d19a66;
+  --hue-6-2: #e6c07b;
+}
+.hljs{display:block;overflow-x:auto;padding:.5em;color:#383a42;color:var(--mono-1,#383a42);background:#fafafa;background:var(--base,#fafafa)}
+.hljs-comment,.hljs-quote{color:#717277;color:var(--mono-3,#717277);font-style:italic}
+.hljs-doctag,.hljs-formula,.hljs-keyword{color:#a626a4;color:var(--hue-3,#a626a4)}
+.hljs-deletion,.hljs-name,.hljs-section,.hljs-selector-tag,.hljs-subst{color:#ca4706;color:var(--hue-5,#ca4706);font-weight:700}
+.hljs-literal{color:#0b76c5;color:var(--hue-1,#0b76c5)}
+.hljs-addition,.hljs-attribute,.hljs-meta-string,.hljs-regexp,.hljs-string{color:#42803c;color:var(--hue-4,#42803c)}
+.hljs-built_in,.hljs-class .hljs-title{color:#9a6a01;color:var(--hue-6-2,#9a6a01)}
+.hljs-attr,.hljs-number,.hljs-selector-attr,.hljs-selector-class,.hljs-selector-pseudo,.hljs-template-variable,.hljs-type,.hljs-variable{color:#986801;color:var(--hue-6,#986801)}
+.hljs-bullet,.hljs-link,.hljs-meta,.hljs-selector-id,.hljs-symbol,.hljs-title{color:#336ae3;color:var(--hue-2,#336ae3)}
+.hljs-emphasis{font-style:italic}
+.hljs-strong{font-weight:700}
+.hljs-link{text-decoration:underline}
+</style>
+<style>
 
   .sidelabel {
     position: fixed;
@@ -100,7 +145,7 @@ img.license{float:left;padding-right:5px;background:0 0}
     color: white;
     white-space: nowrap;
     z-index: 1;
-    background-color: #FF0000;
+    background-color: #EE0000;
   }
 </style>
 <script type="text/javascript">
@@ -122,7 +167,8 @@ img.license{float:left;padding-right:5px;background:0 0}
       "id": "Geonovum",
       "height": 67,
       "width": 132,
-      "url": "https://www.geonovum.nl/geo-standaarden"
+      "url": "https://www.geonovum.nl/geo-standaarden",
+      "ico": "https://docs.geostandaarden.nl/media/Geonovum.ico"
     }
   ],
   "postProcess": [
@@ -171,7 +217,6 @@ img.license{float:left;padding-right:5px;background:0 0}
       "vv": "Proposed recommendation",
       "def": "Recommendation",
       "ld": "Living document",
-      "basis": "Document",
       "no": "Norm",
       "st": "Standard",
       "im": "Information model",
@@ -188,7 +233,6 @@ img.license{float:left;padding-right:5px;background:0 0}
       "vv": "Versie ter vaststelling",
       "def": "Vastgestelde versie",
       "ld": "Levend document",
-      "basis": "Document",
       "no": "Norm",
       "st": "Standaard",
       "im": "Informatiemodel",
@@ -207,7 +251,6 @@ img.license{float:left;padding-right:5px;background:0 0}
       "wv": "Dit is een werkversie die op elk moment kan worden gewijzigd, verwijderd of vervangen door andere documenten. Het is geen stabiel document.",
       "cv": "Dit is een consultatieversie.",
       "vv": "Dit is de definitieve conceptversie van dit document. Wijzigingen naar aanleiding van consultaties zijn doorgevoerd.",
-      "basis": "Dit is een document zonder officiële status.",
       "ld": "Dit is een levend document dat regelmatig gewijzigd wordt."
     },
     "en": {
@@ -216,16 +259,14 @@ img.license{float:left;padding-right:5px;background:0 0}
       "wv": "This is a working draft that can be changed, removed or replaced by other documents at any time. It is not a stable document.",
       "cv": "This is a stable draft, published for public comment.",
       "vv": "This is the final draft of this document. Edits resulting from consultations have been applied.",
-      "basis": "This document has no official standing.",
       "ld": "This is a living document, which is updated regularly."
     }
   },
   "labelColor": {
     "def": "#045D9F",
-    "wv": "#FF0000",
+    "wv": "#EE0000",
     "cv": "#045D9F",
     "vv": "#045D9F",
-    "basis": "#80CC28",
     "ld": "#80CC28"
   },
   "licenses": {
@@ -233,7 +274,7 @@ img.license{float:left;padding-right:5px;background:0 0}
       "name": "Creative Commons 0 Public Domain Dedication",
       "short": "CC0",
       "url": "https://creativecommons.org/publicdomain/zero/1.0/",
-      "image": "https://docs.geostandaarden.nl/media/CC-Licentie.svg"
+      "image": "https://docs.geostandaarden.nl/media/cc-zero.svg"
     },
     "cc-by": {
       "name": "Creative Commons Attribution 4.0 International Public License",
@@ -1323,8 +1364,7 @@ img.license{float:left;padding-right:5px;background:0 0}
   "pubDomain": "bag",
   "specStatus": "wv",
   "specType": "WA",
-  "publishDate": "2026-11-20",
-  "github": "https://github.com/geonovum/bgtwerkafspraakoverbouwenonderbouw/",
+  "publishDate": "2026-11-25",
   "authors": [
     {
       "name": "Geonovum",
@@ -1334,7 +1374,7 @@ img.license{float:left;padding-right:5px;background:0 0}
   ],
   "editors": [
     {
-      "name": "Geonovum",
+      "name": "Silvy Horbach",
       "company": "Geonovum",
       "companyURL": "https://www.geonovum.nl"
     }
@@ -1348,12 +1388,12 @@ img.license{float:left;padding-right:5px;background:0 0}
     <h2>
       Geonovum Werkafspraak<br>
       Werkversie
-      <time class="dt-published" datetime="2026-11-20">20 november 2026</time>
+      <time class="dt-published" datetime="2026-11-25">25 november 2026</time>
     </h2>
     <dl>
       
       
-      <dt>Laatste werkversie:</dt><dd><a href="https://geonovum.github.io/bgtwerkafspraakoverbouwenonderbouw/">https://geonovum.github.io/bgtwerkafspraakoverbouwenonderbouw/</a></dd>
+      
       
       
       
@@ -1361,23 +1401,13 @@ img.license{float:left;padding-right:5px;background:0 0}
       
       <dt>Redacteur:</dt>
       <dd class="editor p-author h-card vcard">
-    <span class="p-name fn">Geonovum</span> (<a class="p-org org h-org" href="https://www.geonovum.nl">Geonovum</a>)
+    <span class="p-name fn">Silvy Horbach</span> (<a class="p-org org h-org" href="https://www.geonovum.nl">Geonovum</a>)
   </dd>
       
       <dt>Auteur:</dt><dd class="editor p-author h-card vcard">
     <span class="p-name fn">Geonovum</span> (<a class="p-org org h-org" href="https://www.geonovum.nl">Geonovum</a>)
   </dd>
-      <dt>Doe mee:</dt><dd>
-    <a href="https://github.com/geonovum/bgtwerkafspraakoverbouwenonderbouw/">GitHub geonovum/bgtwerkafspraakoverbouwenonderbouw</a>
-  </dd><dd>
-    <a href="https://github.com/geonovum/bgtwerkafspraakoverbouwenonderbouw/issues/">Alle issues</a>
-  </dd><dd>
-    <a href="https://github.com/geonovum/bgtwerkafspraakoverbouwenonderbouw/issues/new/choose">Dien een melding in</a>
-  </dd><dd>
-    <a href="https://github.com/geonovum/bgtwerkafspraakoverbouwenonderbouw/commits/">Revisiehistorie</a>
-  </dd><dd>
-    <a href="https://github.com/geonovum/bgtwerkafspraakoverbouwenonderbouw/pulls/">Pull requests</a>
-  </dd>
+      
     </dl>
     
     
@@ -1389,8 +1419,14 @@ img.license{float:left;padding-right:5px;background:0 0}
     <hr title="Separator for header">
   </div>
       
-      <nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#4943F2C6"><bdi class="secno">1. </bdi>Aanleiding</a></li><li class="tocline"><a class="tocxref" href="#543442A1"><bdi class="secno">2. </bdi>Doel van de werkafspraak</a></li><li class="tocline"><a class="tocxref" href="#384177D2"><bdi class="secno">3. </bdi>Uitgangspunten voor het registreren van overbouw en onderbouw</a></li><li class="tocline"><a class="tocxref" href="#792BF0F2"><bdi class="secno">4. </bdi>Afbakeningsregels van registratie van overbouw en onderbouw</a></li><li class="tocline"><a class="tocxref" href="#7F88DDAE"><bdi class="secno">5. </bdi>Gebruik en uitwisseling</a></li><li class="tocline"><a class="tocxref" href="#52E7E10C"><bdi class="secno">6. </bdi>Kwaliteitsindicatoren</a></li><li class="tocline"><a class="tocxref" href="#47426A27"><bdi class="secno">7. </bdi>Beheeraspecten</a></li><li class="tocline"><a class="tocxref" href="#bijlage-voorbeelden-van-afbakening-1-de-bag-id-s-en-de-bgt-id-s-zijn-fictief"><bdi class="secno">8. </bdi>Bijlage voorbeelden van afbakening<span class="noot">[1]<span class="noottekst"> De BAG-id’s en de BGT-id’s zijn fictief<br></span></span></a></li></ol></nav>
-      <section class="chapter" id="aanleiding"><div class="header-wrapper"><h2 id="4943F2C6"><bdi class="secno">1. </bdi>Aanleiding</h2><a class="self-link" href="#4943F2C6" aria-label="Permalink for Section 1."></a></div><p>Aanleiding zijn de volgende knelpunten die in de huidige situatie zijn geconstateerd:   </p>
+      <nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#55C21EAC"><bdi class="secno">1. </bdi>BGT Werkafspraak Overbouw en onderbouw</a></li><li class="tocline"><a class="tocxref" href="#4943F2C6"><bdi class="secno">2. </bdi>Aanleiding</a></li><li class="tocline"><a class="tocxref" href="#543442A1"><bdi class="secno">3. </bdi>Doel van de werkafspraak</a></li><li class="tocline"><a class="tocxref" href="#384177D2"><bdi class="secno">4. </bdi>Uitgangspunten voor het registreren van overbouw en onderbouw</a></li><li class="tocline"><a class="tocxref" href="#792BF0F2"><bdi class="secno">5. </bdi>Afbakeningsregels van registratie van overbouw en onderbouw</a></li><li class="tocline"><a class="tocxref" href="#7F88DDAE"><bdi class="secno">6. </bdi>Gebruik en uitwisseling</a></li><li class="tocline"><a class="tocxref" href="#52E7E10C"><bdi class="secno">7. </bdi>Kwaliteitsindicatoren</a></li><li class="tocline"><a class="tocxref" href="#47426A27"><bdi class="secno">8. </bdi>Beheeraspecten</a></li><li class="tocline"><a class="tocxref" href="#bijlage-voorbeelden-van-afbakening-1-de-bag-id-s-en-de-bgt-id-s-zijn-fictief"><bdi class="secno">9. </bdi>Bijlage voorbeelden van afbakening<span class="noot">[1]<span class="noottekst"> De BAG-id’s en de BGT-id’s zijn fictief<br></span></span></a></li></ol></nav>
+      <section class="chapter" id="bgt-werkafspraak-overbouw-en-onderbouw"><div class="header-wrapper"><h2 id="55C21EAC"><bdi class="secno">1. </bdi>BGT Werkafspraak Overbouw en onderbouw</h2><a class="self-link" href="#55C21EAC" aria-label="Permalink for Section 1."></a></div><pre><code aria-busy="false" class="hljs css">                    &lt;<span class="hljs-selector-tag">b</span>&gt;onderwerp&lt;/<span class="hljs-selector-tag">b</span>&gt;      
+                    &lt;<span class="hljs-selector-tag">b</span>&gt;datum&lt;/<span class="hljs-selector-tag">b</span>&gt;                &lt;<span class="hljs-selector-tag">b</span>&gt;status&lt;/<span class="hljs-selector-tag">b</span>&gt;          
+                    &lt;<span class="hljs-selector-tag">b</span>&gt;van&lt;/<span class="hljs-selector-tag">b</span>&gt;                &lt;<span class="hljs-selector-tag">b</span>&gt;versie&lt;/<span class="hljs-selector-tag">b</span>&gt;    <span class="hljs-number">1.0</span>  
+                        &lt;<span class="hljs-selector-tag">b</span>&gt;aan&lt;/<span class="hljs-selector-tag">b</span>&gt;            &lt;<span class="hljs-selector-tag">b</span>&gt;blad    &lt;/<span class="hljs-selector-tag">b</span>&gt;<span class="hljs-number">1</span>van <span class="hljs-number">9</span>
+</code></pre>
+</section>
+      <section class="chapter" id="aanleiding"><div class="header-wrapper"><h2 id="4943F2C6"><bdi class="secno">2. </bdi>Aanleiding</h2><a class="self-link" href="#4943F2C6" aria-label="Permalink for Section 2."></a></div><p>Aanleiding zijn de volgende knelpunten die in de huidige situatie zijn geconstateerd:   </p>
 <ol type="1"><li>Het is formeel niet toegestaan om de geometrie van (delen van) panden op andere relatieve hoogten dan 0, vast te leggen in de BGT, met uitzondering van de genoemde uitzonderingen in paragraaf 10.7.1 van de BGT-gegevenscatalogus.</li>
 <li>Software in de gehele keten controleert niet op deze formele regel, niet aan de voorkant (in de aanlevering aan de LV) noch aan de achterkant (kwaliteitsdashboard). </li>
 <li>Uit de inhoud van de BGT blijkt dat bronhouders, al dan niet wetende dat het feitelijk niet mag, panden op andere relatieve hoogten leggen, in andere situaties dan de benoemde uitzonderingen.</li>
@@ -1399,7 +1435,7 @@ Daarnaast valt het op dat:
 <ul><li>Er voor knelpunt 1 technisch geen belemmering is om geometrieën van over- en/of onderbouw van panden op andere relatieve hoogten vast te leggen in de landelijke voorziening van de BGT (LV-BGT). Van deze technische mogelijkheid wordt door meerdere bronhouders gebruik gemaakt. </li>
 <li>Er wordt door bronhouders momenteel op verschillende wijze invulling gegeven aan vastlegging van overbouw en onderbouw. Dit draagt niet bij aan een uniforme BGT.</li>
 </ul></section>
-      <section class="chapter" id="doel-van-de-werkafspraak"><div class="header-wrapper"><h2 id="543442A1"><bdi class="secno">2. </bdi>Doel van de werkafspraak</h2><a class="self-link" href="#543442A1" aria-label="Permalink for Section 2."></a></div><p>Het doel van deze werkafspraak is het uniform en controleerbaar registreren van overbouw en onderbouw in de BGT, zodanig dat:  </p>
+      <section class="chapter" id="doel-van-de-werkafspraak"><div class="header-wrapper"><h2 id="543442A1"><bdi class="secno">3. </bdi>Doel van de werkafspraak</h2><a class="self-link" href="#543442A1" aria-label="Permalink for Section 3."></a></div><p>Het doel van deze werkafspraak is het uniform en controleerbaar registreren van overbouw en onderbouw in de BGT, zodanig dat:  </p>
 <ol type="1"><li>De bestaande koppeling met BAG-panden behouden blijft;</li>
 <li>De geometrie realistisch aansluit bij de fysieke situatie;</li>
 <li>De gegevens bruikbaar blijven voor landelijke voorzieningen en afnemers;</li>
@@ -1407,7 +1443,8 @@ Daarnaast valt het op dat:
 <li>Bijhouding en inwinning efficiënt en eenduidig is;</li>
 <li>Het zoveel mogelijk aansluiten bij de huidige praktijk;</li>
 </ol></section>
-      <section class="chapter" id="uitgangspunten-voor-het-registreren-van-overbouw-en-onderbouw"><div class="header-wrapper"><h2 id="384177D2"><bdi class="secno">3. </bdi>Uitgangspunten voor het registreren van overbouw en onderbouw</h2><a class="self-link" href="#384177D2" aria-label="Permalink for Section 3."></a></div><p>In het overleg met de Begeleidingsgroep Geo Basisobjecten d.d. 20 maart 2025 zijn de volgende uitgangspunten voor de uitwerking vastgesteld:   </p>
+      <section class="chapter" id="uitgangspunten-voor-het-registreren-van-overbouw-en-onderbouw"><div class="header-wrapper"><h2 id="384177D2"><bdi class="secno">4. </bdi>Uitgangspunten voor het registreren van overbouw en onderbouw</h2><a class="self-link" href="#384177D2" aria-label="Permalink for Section 4."></a></div><pre><code aria-busy="false" class="hljs yaml">                <span class="hljs-attr">In het overleg met de Begeleidingsgroep Geo Basisobjecten d.d. 20 maart 2025 zijn de volgende uitgangspunten voor de uitwerking vastgesteld:</span>   
+</code></pre>
 <ul><li>                    Het is formeel <b>toegestaan</b> dat geometrieën van delen van panden op relatieve hoogte(n) anders dan 0 in de landelijke voorziening van de BGT worden vastgelegd, naast de uitzonderingen in paragraaf 10.7.1 van de BGT-gegevenscatalogus;</li>
 <li>                    Geometrieën van overstekende delen van panden op relatieve hoogte(n) groter dan 0 worden in deze werkafspraak overbouw genoemd;</li>
 <li>                    Geometrieën van uitstekende delen van panden op relatieve hoogte(n) kleiner dan 0 worden in deze werkafspraak onderbouw genoemd;</li>
@@ -1423,7 +1460,7 @@ Door de werkgroep zijn de volgende uitgangspunten toegevoegd:
 </ul>
 </li>
 </ul></section>
-      <section class="chapter" id="afbakeningsregels-van-registratie-van-overbouw-en-onderbouw"><div class="header-wrapper"><h2 id="792BF0F2"><bdi class="secno">4. </bdi>Afbakeningsregels van registratie van overbouw en onderbouw</h2><a class="self-link" href="#792BF0F2" aria-label="Permalink for Section 4."></a></div><p>Delen van panden die zich boven maaiveld bevinden (overbouw):   </p>
+      <section class="chapter" id="afbakeningsregels-van-registratie-van-overbouw-en-onderbouw"><div class="header-wrapper"><h2 id="792BF0F2"><bdi class="secno">5. </bdi>Afbakeningsregels van registratie van overbouw en onderbouw</h2><a class="self-link" href="#792BF0F2" aria-label="Permalink for Section 5."></a></div><p>Delen van panden die zich boven maaiveld bevinden (overbouw):   </p>
 <ol type="1"><li>De geometrie van overbouw van een pand wordt in de BGT vastgelegd met het objecttype Pand en een relatieve hoogte &gt; 0.</li>
 <li>Een overbouw kan alleen voorkomen als er ook een pand met dezelfde BAG-identificatie op maaiveld (relatieve hoogte is 0) aanwezig is, met uitzondering van de in paragraaf 10.7.1 van de catalogus BGT 2.1 genoemde uitzonderingen. Zie voorbeeld A in de Bijlage.</li>
 <li>Alleen de <u>uít</u>stekende delen - uítstekend ten opzichte van maaiveld - van de overbouw worden afgebakend (zoals uitkragende delen van panden);</li>
@@ -1459,38 +1496,27 @@ Totale pand:
 <ol type="1"><li>De samengestelde 2D-projectie van alle geometrieën van het BGT pand bij elkaar, waarbij onderlinge overlap is geëlimineerd, is topologisch aangesloten én is gelijk aan de BAG geometrie van dat pand.</li>
 <li>Van de BGT panden met dezelfde BAG-identificatie mag&nbsp;maar één BGT pand de volledige nummeraanduidingsreeks (NAR) krijgen, die gerelateerd is aan dat BAG-pand.&nbsp;Deze NAR wordt geplaatst in een BGT pand (met status = bestaand) met een relatieve hoogte = 0. Voor een geheel ondergronds pand met relatieve hoogte &lt; 0 wordt de NAR in dat pand geplaatst.</li>
 </ol></section>
-      <section class="chapter" id="gebruik-en-uitwisseling"><div class="header-wrapper"><h2 id="7F88DDAE"><bdi class="secno">5. </bdi>Gebruik en uitwisseling</h2><a class="self-link" href="#7F88DDAE" aria-label="Permalink for Section 5."></a></div><p>De gegevens worden aangeboden aan de Landelijke Voorziening BGT.</p>
+      <section class="chapter" id="gebruik-en-uitwisseling"><div class="header-wrapper"><h2 id="7F88DDAE"><bdi class="secno">6. </bdi>Gebruik en uitwisseling</h2><a class="self-link" href="#7F88DDAE" aria-label="Permalink for Section 6."></a></div><p>De gegevens worden aangeboden aan de Landelijke Voorziening BGT.</p>
 </section>
-      <section class="chapter" id="kwaliteitsindicatoren"><div class="header-wrapper"><h2 id="52E7E10C"><bdi class="secno">6. </bdi>Kwaliteitsindicatoren</h2><a class="self-link" href="#52E7E10C" aria-label="Permalink for Section 6."></a></div><p>Bestaande indicatoren eventueel aanpassen om deze nog steeds zinvol te laten zijn. Opvoeren van nieuwe indicatoren is niet gewenst.</p>
+      <section class="chapter" id="kwaliteitsindicatoren"><div class="header-wrapper"><h2 id="52E7E10C"><bdi class="secno">7. </bdi>Kwaliteitsindicatoren</h2><a class="self-link" href="#52E7E10C" aria-label="Permalink for Section 7."></a></div><p>Bestaande indicatoren eventueel aanpassen om deze nog steeds zinvol te laten zijn. Opvoeren van nieuwe indicatoren is niet gewenst.</p>
 </section>
-      <section class="chapter" id="beheeraspecten"><div class="header-wrapper"><h2 id="47426A27"><bdi class="secno">7. </bdi>Beheeraspecten</h2><a class="self-link" href="#47426A27" aria-label="Permalink for Section 7."></a></div><p>De werkafspraak wordt vastgesteld als tijdelijke aanvulling op de standaard en kan bij een volgende formele standaardwijziging (bijv. IMGeo 3.0) worden opgenomen.</p>
+      <section class="chapter" id="beheeraspecten"><div class="header-wrapper"><h2 id="47426A27"><bdi class="secno">8. </bdi>Beheeraspecten</h2><a class="self-link" href="#47426A27" aria-label="Permalink for Section 8."></a></div><p>De werkafspraak wordt vastgesteld als tijdelijke aanvulling op de standaard en kan bij een volgende formele standaardwijziging (bijv. IMGeo 3.0) worden opgenomen.</p>
 </section>
-      <section class="chapter" id="bijlage-voorbeelden-van-afbakening-1-de-bag-id-s-en-de-bgt-id-s-zijn-fictief"><div class="header-wrapper"><h2 id="x8-bijlage-voorbeelden-van-afbakening-1-de-bag-id-s-en-de-bgt-id-s-zijn-fictief"><bdi class="secno">8. </bdi>Bijlage voorbeelden van afbakening<span class="noot">[1]<span class="noottekst"> De BAG-id’s en de BGT-id’s zijn fictief<br></span></span></h2><a class="self-link" href="#bijlage-voorbeelden-van-afbakening-1-de-bag-id-s-en-de-bgt-id-s-zijn-fictief" aria-label="Permalink for Section 8."></a></div>
+      <section class="chapter" id="bijlage-voorbeelden-van-afbakening-1-de-bag-id-s-en-de-bgt-id-s-zijn-fictief"><div class="header-wrapper"><h2 id="x9-bijlage-voorbeelden-van-afbakening-1-de-bag-id-s-en-de-bgt-id-s-zijn-fictief"><bdi class="secno">9. </bdi>Bijlage voorbeelden van afbakening<span class="noot">[1]<span class="noottekst"> De BAG-id’s en de BGT-id’s zijn fictief<br></span></span></h2><a class="self-link" href="#bijlage-voorbeelden-van-afbakening-1-de-bag-id-s-en-de-bgt-id-s-zijn-fictief" aria-label="Permalink for Section 9."></a></div>
 <p> {#47F5EA8C}
-A] Situatie: pand met overbouw en onderbouw (kelder) die groter is dan het pand.<br><img src="media/image1.png" alt="Afbeelding met huis, raam, ontwerp" style="width: 100%;">
-Afbakening op maaiveld:<br><img src="media/image2.png" alt="Geen alternatieve tekst beschikbaar" style="width: 6.628444881889764%;">
-<img src="media/image3.png" alt="Afbeelding met tekst, schermopname, lijn, Perceel" style="width: 100%;">
-Afbakening op +1:<br><img src="media/image4.png" alt="Afbeelding met tekst, diagram, schermopname, lijn" style="width: 100%;">
-<img src="media/image5.png" alt="Afbeelding met tekst, schermopname, lijn, diagram" style="width: 100%;">
+A] Situatie: pand met overbouw en onderbouw (kelder) die groter is dan het pand.<br><img src="media/image1.png" alt="Afbeelding 152128218" style="width: 100%;">
 B] situatie: pand&nbsp; bestaande uit 2 bovengrondse ingangen (multivlak) en als onderbouw een ondergrondse parkeergarage met dezelfde BAG-identificatie: 1 BAG pand, 2 BGT panden.<br><br>
 <br>
--178515587</p><div class="textbox"><p id="5EC8FF2F"><b>met uitsparingen</b></p></div><p></p>
-<div class="textbox"><p id="592D93AA">BGT pand G0123.44a0c0c0a444c </p><p class="space-after" id="4486CD7B">met BAG-identificatie 012329902</p></div><div class="textbox"><p id="1CA1BF85">BGT pand G0123.55a0c0c0a555c </p><p class="space-after" id="043D10AC">met BAG-identificatie 012329902</p></div><div class="textbox"><p id="5EC8FF2Fx"><b>met uitsparingen</b></p></div><div class="textbox"><p id="592D93AAx">BGT pand G0123.44a0c0c0a444c </p><p class="space-after" id="4486CD7Bx">met BAG-identificatie 012329902</p></div><div class="textbox"><p id="1CA1BF85x">BGT pand G0123.55a0c0c0a555c </p><p class="space-after" id="043D10ACx">met BAG-identificatie 012329902</p></div><br>
-<br>
-C] situatie van een flat met een grote afzonderlijke en geheel ondergrondse pand (parkeergarage): 2 BAG panden, 2 BGT panden.  
-<b>Plaatje heeft word-</b><b>controls</b><b> in beeld:</b>  
-<img src="media/image8.png" alt="Afbeelding met schermopname, Rechthoek, diagram, lijn" style="width: 100%;">
-41624251205230<div class="textbox"><p id="25D05BB1">BGT pand G0123.33a0c0c0a333c </p><p class="space-after" id="455A4C99">met BAG-identificatie 012329903</p></div><div class="textbox"><p id="25D05BB1x">BGT pand G0123.33a0c0c0a333c </p><p class="space-after" id="455A4C99x">met BAG-identificatie 012329903</p></div><p>Op maaiveld:<br><img src="media/image9.png" alt="Afbeelding met lijn, schermopname, Rechthoek, diagram" style="width: 100%;">
+<img src="media/image2.png" alt="Afbeelding 309770057" style="width: 100%;">
 <br>
 <br>
-Op rh = -1<br><img src="media/image10.png" alt="Afbeelding met schermopname, tekst, lijn, diagram" style="width: 100%;">
+C] situatie van een flat met een grote afzonderlijke en geheel ondergrondse pand (parkeergarage): 2 BAG panden, 2 BGT panden.<br><br>
+<br>
+<img src="media/image3.png" alt="Afbeelding 1364120532" style="width: 100%;">
 <br>
 <br>
-D] Voorbeeld van meerdere overbouwen bij een pand<br>In onderstaand voorbeeld is een pand getekend, waaraan 2 overbouw constructies hangen. De afbakening van de geometrie van de overbouwen zou op 3 manieren kunnen plaatsvinden.<br>Manier 3 is de enige manier die toegestaan is. <b>Als gegroepeerde vormen:</b><br>-121343060</p><div class="textbox"><p id="78E68029">Manier 3</p></div><p></p>
-<div class="textbox"><p id="5000C217">Manier 2</p></div><div class="textbox"><p id="1D6D01D0">Manier 1</p></div><div class="textbox"><p id="78E68029x">Manier 3</p></div><div class="textbox"><p id="5000C217x">Manier 2</p></div><div class="textbox"><p id="1D6D01D0x">Manier 1</p></div><br>
-<br>
-<b>Overbouw manier 3 als </b><b>png</b><b>:</b>  
-<img src="media/image13.png" alt="Afbeelding 1768828845" style="width: 78.63712088072326%;"></section>
+D] Voorbeeld van meerdere overbouwen bij een pand<br>In onderstaand voorbeeld is een pand getekend, waaraan 2 overbouw constructies hangen. De afbakening van de geometrie van de overbouwen zou op 3 manieren kunnen plaatsvinden.<br>Manier 3 is de enige manier die toegestaan is.<br><img src="media/image4.png" alt="Afbeelding 229803176" style="width: 100%;"></p>
+</section>
    
 <p role="navigation" id="back-to-top">
     <a href="#title"><abbr title="Terug naar boven">↑</abbr></a>
