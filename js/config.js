@@ -7,7 +7,7 @@ var respecConfig =
   specStatus: "wv",
   specType: "WA",
   license: "cc-by",
-  publishDate: "2026-11-25",
+  publishDate: "2026-11-26",
   github: "https://github.com/geonovum/bgtwerkafspraakoverbouwenonderbouw/",
   authors: [
     {
