@@ -6,8 +6,9 @@ var respecConfig =
   pubDomain: "bag",
   specStatus: "wv",
   specType: "WA",
-  license: "cc-by-nd",
+  license: "cc-by",
   publishDate: "2026-11-25",
+  github: "https://github.com/geonovum/bgtwerkafspraakoverbouwenonderbouw/",
   authors: [
     {
       name: "Geonovum",
